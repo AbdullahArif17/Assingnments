@@ -21,7 +21,7 @@ const product2:Product = {
       price: 40.00,
       inventory: {
         stock: 50,
-        colorOptions: ['blue', 'black']
+        colorOptions: ['blue', 'black', 'white']
       }
     }
 const product3:Product = {
@@ -32,6 +32,9 @@ const product3:Product = {
         colorOptions: ['white', 'black', 'red']
       }
     }
+
+    let products = [product1,product2,product3]
+    
 
    
 
