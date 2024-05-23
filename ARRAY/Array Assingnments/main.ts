@@ -33,8 +33,12 @@ const product3:Product = {
       }
     }
 
-    let products = [product1,product2,product3]
-    
+    const products = [product1,product2,product3]
+
+    let colorChange =  (products:Product, newColor) =>{
+      
+    }
+
 
    
 

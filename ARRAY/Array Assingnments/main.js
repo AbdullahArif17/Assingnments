@@ -17,3 +17,4 @@ function changeColor(product, newColor) {
         product.price *= 0.95;
     }
 }
+
