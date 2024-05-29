@@ -23,6 +23,7 @@ const product3 = {
         stock: 75,
         colorOptions: ['white', 'black', 'red']
     }
+
 };
 const products = [product1, product2, product3];
 let colorChange = (products, newColor) => {
@@ -44,3 +45,5 @@ let colorChange = (products, newColor) => {
 console.log(colorChange(product1, 'black'));
 console.log(colorChange(product2, 'white'));
 console.log(colorChange(product3, 'red'));
+}
+
