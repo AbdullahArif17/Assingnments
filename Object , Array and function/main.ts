@@ -85,5 +85,46 @@ console.log(inventory[3].quantity);
 
 console.log(inventory)
 
+// Assignment 4: Student List Organizer
 
+type Student = {
+    name: string,
+    senior: boolean,
+    completedAssignments:boolean
+};
 
+const students = []
+
+let student1:Student = {
+    name: 'Abdullah',
+    senior: false,
+    completedAssignments: true
+}
+let student2:Student = {
+    name: 'Hamza',
+    senior: true,
+    completedAssignments: false
+}
+let student3:Student = {
+    name: 'Saad',
+    senior: true,
+    completedAssignments: true
+}
+let student4:Student = {
+    name: 'Zohaib',
+    senior: false,
+    completedAssignments: false
+}
+
+students.push(student1,student2,student3,student4)
+
+function findSeniorStudentsWithAssignments(students: Student[]): Student[] {
+    return students.filter(student => student.senior && student.completedAssignments);
+}
+
+function updateClassList(students: Student[]): Student[] {
+    return students.filter(student => student.completedAssignments || !student.senior);
+}
+
+console.log(findSeniorStudentsWithAssignments(students));
+console.log(updateClassList(students))

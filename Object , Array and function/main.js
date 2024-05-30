@@ -58,3 +58,33 @@ var product4 = {
 inventory.push(product4);
 console.log(inventory[3].quantity);
 console.log(inventory);
+var students = [];
+var student1 = {
+    name: 'Abdullah',
+    senior: false,
+    completedAssignments: true
+};
+var student2 = {
+    name: 'Hamza',
+    senior: true,
+    completedAssignments: false
+};
+var student3 = {
+    name: 'Saad',
+    senior: true,
+    completedAssignments: true
+};
+var student4 = {
+    name: 'Zohaib',
+    senior: false,
+    completedAssignments: false
+};
+students.push(student1, student2, student3, student4);
+function findSeniorStudentsWithAssignments(students) {
+    return students.filter(function (student) { return student.senior && student.completedAssignments; });
+}
+function updateClassList(students) {
+    return students.filter(function (student) { return student.completedAssignments || !student.senior; });
+}
+console.log(findSeniorStudentsWithAssignments(students));
+console.log(updateClassList(students));
